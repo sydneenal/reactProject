@@ -1,9 +1,11 @@
+body
+  overflow: hidden
 .app
   width: 100vw
   height: 100vh
-
+  display: flex
+  justify-content: flex-start
 .leftSide
-  margin-right: 36px
   width: 30%
   min-width: 420px
   height: 100%
@@ -40,15 +42,23 @@
     margin-left: 33px
     margin-right: 33px
     img
+      cursor: pointer
       height: 28px
       width: 28px
+      &:hover
+        transform: scale(1.1)
   &-contacts
     margin-top: 26px
     &-item
+      cursor: pointer
       height: 84px
       display: flex
       justify-content: space-between
       align-items: center
+      &:hover
+        cursor: pointer
+        transform: scale(1.01)
+        background-color: #219269
       &__left
         display: flex
         align-items: center
@@ -107,16 +117,166 @@
     margin-top: 10px
     margin-right: 30px
     img
+      cursor: pointer
       height: 40px
       width: 40px
+      &:hover
+        transform: scale(1.1)
   &-options
     margin-top: 10px
     margin-right: 10px
     img
+      cursor: pointer
       height: 40px
       width: 30px
+      &:hover
+        transform: scale(1.1)
 .lineState
   background-color: #77e004
   height: 10px
   width: 10px
   border-radius: 50%
+.rightSide
+  width: 20%
+  min-width: 340px
+  box-shadow: 4px 0 20px rgba(0, 0, 0, 0.1)
+  background-color: white
+.dialog
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  width: 50%
+  min-width: 682px
+  background-color: white
+  height: 100%
+  &-top
+    width: 100%
+    height: 109px
+    background-color: white
+    display: flex
+    align-items: center
+    justify-content: space-between
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3)
+    &__left
+      display: flex
+      margin-left: 34px
+      align-items: center
+      &.userName
+        margin-left: 10px
+        color: #444444
+        font-family: Quicksand
+        font-size: 35px
+        font-weight: 700
+        letter-spacing: 0.44px
+    &__right
+      display: flex
+      margin-right: 46px
+      &.phoneCall
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 40px
+        height: 40px
+        border-radius: 50%
+        background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%)
+        cursor: pointer
+        &:hover
+          transform: scale(1.05)
+  &-bottom
+    height: 80px
+    background-color: #ebebeb
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &-send
+      width: 48px
+      height: 48px
+      background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%)
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-right: 27px
+    &-input
+      margin-left: 30px
+      color: #9d9d9d
+      font-family: "Proxima Nova - Regular"
+      font-size: 18px
+      font-weight: 400
+  &-middle
+    width: 100%
+    display: flex
+    flex-direction: column
+    &-message
+      &-to
+        margin-top: 20px
+        position: relative
+        margin-left: 20px
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        &-username
+          display: flex
+          flex-direction: column
+          img
+            width: 45px
+            height: 45px
+          p
+            color: #545454
+            font-family: "Proxima Nova - Regular"
+            font-size: 13px
+            font-weight: 400
+            text-transform: uppercase
+        &-text
+          //top: -85px
+          //left: 50px
+          //position: absolute
+          margin-left: 30px
+          border-radius: 10px 10px 10px 0
+          background-color: #eaeaea
+          width: 298px
+          display: flex
+          align-items: center
+          justify-content: center
+          p
+            width: 236px
+            color: #545454
+            font-family: "Proxima Nova - Regular"
+            font-size: 17px
+            font-weight: 400
+      &-from
+        margin-top: 20px
+        position: relative
+        margin-right: 20px
+        display: flex
+        justify-content: flex-end
+        align-items: center
+        &-username
+          display: flex
+          flex-direction: column
+          img
+            width: 45px
+            height: 45px
+          p
+            color: #545454
+            font-family: "Proxima Nova - Regular"
+            font-size: 13px
+            font-weight: 400
+            text-transform: uppercase
+        &-text
+          //top: -85px
+          //left: 50px
+          //position: absolute
+          margin-right: 30px
+          border-radius: 10px 10px 0 10px
+          background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%)
+          width: 298px
+          display: flex
+          align-items: center
+          justify-content: center
+          p
+            width: 236px
+            color: #ffffff
+            font-family: "Proxima Nova - Regular"
+            font-size: 17px
+            font-weight: 400
