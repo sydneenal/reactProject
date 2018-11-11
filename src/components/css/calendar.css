@@ -1,0 +1,25 @@
+.calendar{
+     background-color: white;
+     width:500px;
+     height: 85vh;
+     box-shadow:  3px 3px 10px rgba(0,0,0,0.2);
+}
+.calendar hr{
+     color: #D3D3D3;
+     width:450px;
+}
+.calendarname{
+     margin-left: 30px;
+     margin-right: 40px;
+     height: 100px;
+     color: #1E90FF;
+     font-size: 30px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: space-between;
+}
+.calendarnameicon{
+     color: #D3D3D3;
+     font-size: 35px;
+}

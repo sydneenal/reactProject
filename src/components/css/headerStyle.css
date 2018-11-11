@@ -1,0 +1,31 @@
+.header{
+     left: 0;
+     right: 0;
+     background-color: #1E90FF;
+     width: 100vw;
+     height: 10vh;
+     position: absolute;
+     display: flex;
+}
+.right{
+     width: 50vw;
+     height: 10vh;
+}
+.left{
+     width: 45vw;
+     height: 10vh;
+     font-size: 30px;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+}
+.headericon{
+     width: 5vw;
+     height: 10vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}

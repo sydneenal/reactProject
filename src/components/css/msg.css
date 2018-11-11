@@ -1,0 +1,76 @@
+.msgBlock{
+     margin-bottom: 20px;
+     width: inherit;
+     height: auto;
+     min-height: 40px;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+
+}
+.msgPhoto{
+     margin-left: 20px;
+     margin-right: 20px;
+     width: 50px;
+     height: 50px;
+     border-radius: 50px;
+     background-color: black;
+     z-index: 1;
+}
+.msgVector{
+     background-color: #1E90FF;
+     width: 25px;
+     height: 25px;
+     border-radius:0 50px 0 0;
+     transform: rotate(45deg);
+     z-index: 1;
+}
+.msgBox{
+     position: absolute;
+     overflow-wrap: break-word;
+     word-wrap: break-word;
+     word-break: break-all;
+     word-break: break-word;
+     hyphens: auto;
+     background-color: #1E90FF;
+     min-width: 50px;
+     max-width: 600px;
+     min-height: 50px;
+     width: auto;
+     height: auto;
+     border-radius: 20px;
+     margin-left: 5px;
+     display: flex;
+     flex-direction: column;
+     align-items: flex-start;
+     justify-content: center;
+     z-index: 1;
+}
+.textMsg{
+     margin-bottom: 5px;
+     margin-top: 5px;
+     color: white;
+     margin-left: 20px;
+     margin-right: 20px;
+     z-index: 1;
+}
+.box{
+     min-width: 70px;
+     min-height: 50px;
+     width: auto;
+     height: auto;
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: flex-start;
+     z-index: 1;
+}
+.msgTime{
+     height: 12px;
+     margin-bottom: 10px;
+     margin-left: 20px;
+     margin-right: 20px;
+     font-size: 10px;
+     color: #D3D3D3;
+}
