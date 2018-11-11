@@ -9,18 +9,20 @@ import Contacts from "./Contacts";
 
 class LeftSideBar extends React.Component{
     render(){
-        return (<div className="leftSide">
-            <TopBar/>
-
-            <SearchBar/>
-            <div className="leftSide-tabs">
-                <img src={IconTabRecent} alt=""/>
-                <img src={IconTabContact} alt=""/>
-                <img src={IconTabContacts} alt=""/>
-                <img src={IconTabArchive} alt=""/>
+        const { contacts } = this.props;
+        return (
+            <div className="leftSide">
+                <TopBar/>
+                <SearchBar/>
+                <div className="leftSide-tabs">
+                    <img src={IconTabRecent} alt=""/>
+                    <img src={IconTabContact} alt=""/>
+                    <img src={IconTabContacts} alt=""/>
+                    <img src={IconTabArchive} alt=""/>
+                </div>
+                <Contacts contacts={contacts}/>
             </div>
-            <Contacts/>
-        </div>);
+        );
     }
 }
 

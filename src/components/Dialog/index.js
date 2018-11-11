@@ -5,10 +5,11 @@ import MessageInput from "./MessageInput";
 
 class Dialog extends React.Component{
     render(){
+        const { messages } =this.props;
         return(
             <div className="dialog">
                 <TopBar/>
-                <Messages/>
+                <Messages messages={messages}/>
                 <MessageInput/>
             </div>
         )

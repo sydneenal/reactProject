@@ -3,22 +3,23 @@ import ImgContact from "../../../images/img_contact.png";
 
 class Contact extends React.Component{
     render(){
+        const { data } = this.props;
         return(
             <div className="leftSide-contacts-item">
                 <div className="leftSide-contacts-item__left">
                     <div className="leftSide-contacts-item__avatar">
-                        <img src={ImgContact} alt=""/>
+                        <img src={data.avatarUrl} alt=""/>
                         <div className="leftSide-contacts-item__avatar lineState"/>
                     </div>
                     <div className="leftSide-contacts-item-text">
-                        <div className="leftSide-contacts-item-text__name">Richards Hendrics</div>
-                        <div className="leftSide-contacts-item-text__status">Sup man, Wanna go out?</div>
+                        <div className="leftSide-contacts-item-text__name">{data.fullName}</div>
+                        <div className="leftSide-contacts-item-text__status">{data.status}</div>
                     </div>
                 </div>
 
 
                 <div className="leftSide-contacts-item-notification">
-                    <div>1</div>
+                    <div>{data.notification}</div>
                 </div>
             </div>
         );
